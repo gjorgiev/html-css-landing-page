@@ -1,3 +1,4 @@
+.btn,
 .btn:link,
 .btn:visited {
   font-size: 2rem;
@@ -5,6 +6,11 @@
   padding: 1.6rem 3.2rem;
   text-decoration: none;
   border-radius: 9px;
+
+  /* only for the button itself */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
 
   transition: all 0.25s;
 }
@@ -30,4 +36,16 @@
 .btn--outline:active {
   background-color: #fdf2e9;
   box-shadow: inset 0 0 0 3px #fff;
+}
+
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover {
+  background-color: #fff;
+  color: #45260a;
 }
